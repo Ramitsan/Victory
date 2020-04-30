@@ -275,7 +275,6 @@ img {
 }
 
 .section__more {
-  margin: 0 auto;
   margin-top: 50px;
 }
 
@@ -304,6 +303,8 @@ img {
 }
 
 .button--details {
+  display: block;
+  margin: 0 auto;
   width: 253px;
 }
 
