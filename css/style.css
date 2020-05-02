@@ -473,8 +473,8 @@ img {
 }
 
 .book-card__cover {
-  width: 210px;
-  height: 310px;
+  /* width: 210px;
+  height: 310px; */
   margin-right: 15px;
   cursor: pointer;
 }
