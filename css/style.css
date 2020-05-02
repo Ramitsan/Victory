@@ -51,7 +51,6 @@ img {
   background-size: 1180px auto;
   background-position: center;
   background-repeat: no-repeat;
-  /* border: 1px solid red; */
 }
 
 .page-header__wrapper,
@@ -70,7 +69,6 @@ img {
 .page-header__top {
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   align-items: center;
   background-color: rgba(165, 42, 42, 0.9);
 }
@@ -137,7 +135,7 @@ img {
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
-  background-color: brown;
+  background-color: #a52a2a;
   opacity: 0.9;
 }
 
@@ -171,10 +169,13 @@ img {
   padding: 30px 25px;
 }
 
+.page-header__navbar-item a:focus,
 .page-header__navbar-item a:hover {
-  background-color: #f9e4b7;
+  /* background-color: #f9e4b7; */
+  background-color: #fff;
   color: #490202;
   opacity: 0.9;
+  outline: none;
 }
 
 .section {
@@ -218,13 +219,17 @@ img {
 }
 
 .section--roads-of-war,
-.section--monuments {
+.section--vitebsk,
+.section--monuments,
+.roads-of-war,
+.vitebsk,
+.monuments {
   background-color: #f0f0f0;
 }
 
 .section--vitebsk {
   width: 100%;
-  background-color: #f9e4b7;
+  /* background-color: #f9e4b7; */
   padding-top: 30px;
   padding-bottom: 50px;
   background-image: url(../img/bg.png);
@@ -405,6 +410,68 @@ img {
   background-color: brown;
 }
 
+.page-footer {
+  border-top: 1px solid #490202;
+}
+
+.page-footer {
+  padding: 25px 0;
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__logo {
+  width: 95px;
+  height: 95px;
+}
+
+.page-footer__logo-img {
+  filter: grayscale(1);
+}
+
+.page-footer__logo-img:focus,
+.page-footer__logo-img:hover {
+  filter: grayscale(0);
+}
+
+.page-footer__logo-img:active {
+  opacity: 0.7;
+}
+
+.page-footer__social {
+  margin-left: 75px;
+}
+
+.page-footer__social-link:not(:first-child) {
+  padding-left: 15px;
+}
+
+.page-footer__social-link:focus,
+.page-footer__social-link:hover {
+  outline: none;
+}
+
+.page-footer__social-link:focus path,
+.page-footer__social-link:hover path {
+  fill: #490202;
+}
+
+.page-footer__social-link:active path {
+  opacity: 0.7;
+}
+
+.page-footer__copyright {
+  width: 190px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
 .up-button {
   position: fixed;
   z-index: 1;
@@ -423,14 +490,20 @@ img {
   cursor: pointer;
   color: brown;
   background-color: rgba(255, 255, 255, 0.8);
-  border-color: brown;
+  border-color: #a52a2a;
   outline-color: #ffaaaa;
 }
 
+.up-button:focus,
 .up-button:hover {
   color: #490202;
   background-color: rgba(255, 255, 255, 0.8);
   border-color: #490202;
+  outline: none;
+}
+
+.up-button:active {
+  opacity: 0.7;
 }
 
 .shown {
