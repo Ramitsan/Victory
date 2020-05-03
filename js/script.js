@@ -97,7 +97,7 @@
     buttonElement.style.height = '30px';
     buttonElement.style.display = 'block';
     buttonElement.style.border = '1px solid transparent';
-    buttonElement.style.backgroundImage = 'url(../img/close-button.svg)';
+    buttonElement.style.backgroundImage = 'url(img/close-button.svg)';
     buttonElement.style.backgroundPosition = 'center';
     buttonElement.style.backgroundRepeat = 'no-repeat';
     buttonElement.style.cursor = 'pointer';

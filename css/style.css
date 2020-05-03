@@ -615,7 +615,7 @@ input[type="checkbox"]:checked~.book-card__annotation-full {
 
 .book-card__annotation-more::after {
   content: "";
-  background-image: url("/img/arrow-down.svg");
+  background-image: url("../img/arrow-down.svg");
   background-size: 17px auto;
   background-repeat: no-repeat;
   position: absolute;
@@ -626,6 +626,6 @@ input[type="checkbox"]:checked~.book-card__annotation-full {
 }
 
 input[type="checkbox"]:checked~.book-card__annotation-more::after {
-  background-image: url("/img/arrow-up.svg");
+  background-image: url("../img/arrow-up.svg");
   top: 3px;
 }
