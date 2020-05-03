@@ -44,7 +44,9 @@ img {
 }
 
 .page-header {
-  background-color: #f9e4b7;
+  /* background-color: #f9e4b7; */
+  /* background-color: #e3d2c5; */
+  background-color: #faecd1;
   margin: 0;
   padding: 0;
   background-image: url(../img/collag-header.jpg);
@@ -116,7 +118,7 @@ img {
 .page-header__text {
   font-size: 33px;
   line-height: 40px;
-  margin-top: 395px;
+  margin-top: 415px;
   margin-bottom: 15px;
   margin-left: 50px;
   padding-top: 30px;
@@ -628,4 +630,45 @@ input[type="checkbox"]:checked~.book-card__annotation-full {
 input[type="checkbox"]:checked~.book-card__annotation-more::after {
   background-image: url(../img/arrow-up.svg);
   top: 3px;
+}
+
+.list-counter {
+  position: relative;
+  list-style: none;
+  counter-reset: number;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Arial, sans-serif;
+}
+
+.list-counter__item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.list-counter__item::before {
+  counter-increment: number;
+  content: counter(number) ".";
+  position: absolute;
+  left: 0px;
+  z-index: 3;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #490202;
+}
+
+.list-counter__pressmark {
+  display: inline-block;
+  width: 5%;
+  font-weight: 700;
+  color: #a52a2a;
+  margin-right: 45px;
+}
+
+.list-counter__content {
+  width: 75%;
+  margin-right: 25px;
 }
