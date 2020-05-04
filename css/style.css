@@ -53,6 +53,13 @@ img {
   background-repeat: no-repeat;
 }
 
+.page-header--inner {
+  background-image: url(../img/collag-header-inner.jpg);
+  background-size: 1180px auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .page-header__wrapper,
 .page-main__wrapper,
 .page-footer__wrapper {
@@ -125,6 +132,10 @@ img {
   color: #a52a2a;
   text-shadow: 2px 2px 8px #ffffff;
   background-image: linear-gradient(to right top, rgba(250, 250, 250, 0.7), rgba(250, 250, 250, 0));
+}
+
+.page-header__text--inner {
+  margin-top: 240px;
 }
 
 .page-header__navbar {
