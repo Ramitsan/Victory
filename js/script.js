@@ -1,36 +1,38 @@
 'use strict';
-(function() {
+(() => {
   //кнопка прокрутки
-  var upButton = document.querySelector('.up-button');
+  const upButton = document.querySelector('.up-button');
+  const scrollHeight = 800;
 
-  window.addEventListener('scroll', function() {
-    if (window.pageYOffset > 800) {
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > scrollHeight) {
       upButton.classList.add('shown');
     } else {
       upButton.classList.remove('shown');
     }
   });
 
-  upButton.addEventListener('click', function() {
+  upButton.addEventListener('click', () => {
     window.scrollTo(0, 0);
   });
 
 
   //полноэкранный просмотр изображений
-  var previewList = document.querySelectorAll('.js-preview');
-  var overlay;
-  var buttonClose;
-  var ESC_KEYCODE = 27;
+  const previewList = document.querySelectorAll('.js-preview');
+  const ESC_KEYCODE = 27;
+  let overlay;
+  let buttonClose;
 
-  previewList.forEach(function(preview) {
-    preview.addEventListener('click', function(e) {
+
+  previewList.forEach((preview) => {
+    preview.addEventListener('click', (e) => {
       e.preventDefault();
       openBigPicture(preview);
     });
   });
 
-  var openBigPicture = function(preview) {
-    var coverImageElement;
+  const openBigPicture = (preview) => {
+    let coverImageElement;
 
     if (preview.hasAttribute('data-preview')) {
       coverImageElement = document.createElement('img');
@@ -45,7 +47,7 @@
     document.body.appendChild(overlay);
     document.body.appendChild(buttonClose);
 
-    coverImageElement.onload = function() {
+    coverImageElement.onload = () => {
       overlay.appendChild(coverImageElement)
     };
 
@@ -53,9 +55,8 @@
     buttonClose.addEventListener('click', closeBigPicture);
   };
 
-  var closeBigPicture = function(e) {
+  const closeBigPicture = (e) => {
     if (e.target === overlay || e.target === buttonClose) {
-      // e.target.remove();
       overlay.remove();
       buttonClose.remove();
       overlay.removeEventListener('click', closeBigPicture);
@@ -63,7 +64,7 @@
     }
   };
 
-  window.addEventListener('keydown', function(e) {
+  window.addEventListener('keydown', (e) => {
     if (e.keyCode === ESC_KEYCODE) {
       overlay.remove();
       buttonClose.remove();
@@ -72,36 +73,15 @@
     }
   });
 
-  var createOverlay = function() {
-    var overlayElement = document.createElement('div');
-    overlayElement.style.position = 'fixed';
-    overlayElement.style.backgroundColor = 'rgba(0,0,0,0.8)';
-    overlayElement.style.left = 0;
-    overlayElement.style.top = 0;
-    overlayElement.style.right = 0;
-    overlayElement.style.bottom = 0;
-    overlayElement.style.zIndex = 99;
-    overlayElement.style.display = 'flex';
-    overlayElement.style.alignItems = 'center';
-    overlayElement.style.justifyContent = 'center';
+  const createOverlay = () => {
+    let overlayElement = document.createElement('div');
+    overlayElement.classList.add('overlay');
     return overlayElement;
   }
 
-  var createButtonClose = function() {
-    var buttonElement = document.createElement('button');
-    buttonElement.style.position = 'fixed';
-    buttonElement.style.backgroundColor = 'transparent';
-    buttonElement.style.right = '5%';
-    buttonElement.style.top = '5%';
-    buttonElement.style.width = '30px';
-    buttonElement.style.height = '30px';
-    buttonElement.style.display = 'block';
-    buttonElement.style.border = '1px solid transparent';
-    buttonElement.style.backgroundImage = 'url("img/close-button.svg")';
-    buttonElement.style.backgroundPosition = 'center';
-    buttonElement.style.backgroundRepeat = 'no-repeat';
-    buttonElement.style.cursor = 'pointer';
-    buttonElement.style.zIndex = 100;
+  const createButtonClose = () => {
+    let buttonElement = document.createElement('button');
+    buttonElement.classList.add('button--close');
     return buttonElement;
   }
 

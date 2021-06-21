@@ -1,25 +1,25 @@
 'use strict';
-(function() {
+(() => {
   // слайдер Стихи и цитаты о войне
-  var slideIndex = 1;
-  var slides = document.querySelectorAll('.slider__item');
-  var prev = document.querySelector('.slider__button--prev');
-  var next = document.querySelector('.slider__button--next');
-  var sliderDotsWrapper = document.querySelector('.slider__dots-wrapper');
-  var dots = document.querySelectorAll('.slider__dot');
+  const slides = document.querySelectorAll('.slider__item');
+  const prev = document.querySelector('.slider__button--prev');
+  const next = document.querySelector('.slider__button--next');
+  const sliderDotsWrapper = document.querySelector('.slider__dots-wrapper');
+  const dots = document.querySelectorAll('.slider__dot');
+  let slideIndex = 1;
 
-  var showSlides = function(n) {
+  const showSlides = (n) => {
     if (n > slides.length) {
       slideIndex = 1;
     }
     if (n < 1) {
       slideIndex = slides.length;
     }
-    for (var i = 0; i < slides.length; i++) {
+    for (let i = 0; i < slides.length; i++) {
       slides[i].style.display = 'none';
     };
 
-    for (var j = 0; j < dots.length; j++) {
+    for (let j = 0; j < dots.length; j++) {
       dots[j].classList.remove('slider__dot--active');
     };
 
@@ -29,24 +29,24 @@
 
   showSlides(slideIndex);
 
-  var plusSlides = function(n) {
+  const plusSlides = (n) => {
     showSlides(slideIndex += n)
   };
 
-  var currentSlide = function(n) {
+  const currentSlide = (n) => {
     showSlides(slideIndex = n)
   };
 
-  prev.addEventListener('click', function() {
+  prev.addEventListener('click', () => {
     plusSlides(-1);
   });
 
-  next.addEventListener('click', function() {
+  next.addEventListener('click', () => {
     plusSlides(1);
   });
 
-  sliderDotsWrapper.addEventListener('click', function(evt) {
-    for (var i = 0; i < dots.length + 1; i++) {
+  sliderDotsWrapper.addEventListener('click', (evt) => {
+    for (let i = 0; i < dots.length + 1; i++) {
       if (evt.target.classList.contains('slider__dot') && evt.target === dots[i - 1]) {
         currentSlide(i);
       }

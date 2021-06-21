@@ -8,263 +8,261 @@
 *,
 *::before,
 *::after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
-    /* border: 1px solid red; */
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font-family: "Cuprum", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    color: #000;
-    background-color: #fff;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000;
+  background-color: #fff;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: 0;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .btn {
-    border: 1px solid transparent;
-    vertical-align: middle;
+  border: 1px solid transparent;
+  vertical-align: middle;
 }
 
 .page-header {
-    background-color: #faecd1;
-    margin: 0;
-    padding: 0;
-    background-image: url(../img/collag-header.jpg);
-    background-size: 1180px auto;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-color: #faecd1;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/collag-header.jpg);
+  background-size: 1180px auto;
+  background-position: center 78px;
+  background-repeat: no-repeat;
 }
 
 .page-header--inner {
-    background-image: url(../img/collag-header-inner.jpg);
-    background-size: 1180px auto;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url(../img/collag-header-inner.jpg);
+  background-size: 1180px auto;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .page-header__wrapper,
 .page-main__wrapper,
 .page-footer__wrapper {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 0;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .page-main__wrapper,
 .page-footer__wrapper {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 
 .page-header__top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: rgba(165, 42, 42, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(165, 42, 42, 0.9);
 }
 
 .page-header__title {
-    position: relative;
-    margin: 0;
-    margin-left: 150px;
-    font-size: 50px;
-    color: white;
-    text-shadow: 2px 2px 8px #322b22;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+  position: relative;
+  margin: 0;
+  margin-left: 150px;
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 8px #322b22;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .page-header__title::before {
-    content: "";
-    position: absolute;
-    top: -52px;
-    left: -135px;
-    width: 150px;
-    height: 170px;
-    background-image: url(../img/flowers.png);
-    background-size: 150px 170px;
-    background-repeat: no-repeat;
-    background-position: 0 0;
+  content: "";
+  position: absolute;
+  top: -52px;
+  left: -135px;
+  width: 150px;
+  height: 170px;
+  background-image: url(../img/flowers.png);
+  background-size: 150px 170px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .page-header__logo a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .page-header__logo--university {
-    margin: 10px 0;
-    margin-right: 20px;
+  margin: 10px 0;
+  margin-right: 20px;
 }
 
 .page-header__logo {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .page-header__logo-link:focus,
 .page-header__logo-link:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .page-header__text {
-    width: 100%;
-    font-size: 30px;
-    line-height: 40px;
-    font-weight: 700;
-    text-align: left;
-    margin-top: 460px;
-    margin-bottom: 0px;
-    padding-left: 50px;
-    color: #a52a2a;
-    text-shadow: 2px 2px 8px #ffffff;
-    background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(250, 250, 250, 0.7)), to(rgba(250, 250, 250, 0)));
-    background-image: -o-linear-gradient(left bottom, rgba(250, 250, 250, 0.7), rgba(250, 250, 250, 0));
-    background-image: linear-gradient(to right top, rgba(250, 250, 250, 0.7), rgba(250, 250, 250, 0));
+  width: 100%;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 460px;
+  margin-bottom: 0px;
+  padding-left: 50px;
+  color: #a52a2a;
+  text-shadow: 2px 2px 8px #ffffff;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(rgba(250, 250, 250, 0.7)), to(rgba(250, 250, 250, 0)));
+  background-image: -o-linear-gradient(left bottom, rgba(250, 250, 250, 0.7), rgba(250, 250, 250, 0));
+  background-image: linear-gradient(to right top, rgba(250, 250, 250, 0.7), rgba(250, 250, 250, 0));
 }
 
 .page-header__text--inner {
-    margin-top: 240px;
+  margin-top: 240px;
 }
 
 .page-header__navbar {
-    width: 100%;
-    margin: 0;
-    padding: 0px;
-    list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    background-color: #a52a2a;
-    opacity: 0.9;
+  width: 100%;
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #a52a2a;
+  opacity: 0.9;
 }
 
 .page-header__navbar-item {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
 }
 
 .page-header__navbar-item:last-child {
-    border-right: 1px solid #490202;
+  border-right: 1px solid #490202;
 }
 
 .page-header__navbar-item a {
-    width: 100%;
-    height: 100%;
-    display: block;
-    padding: 20px 25px;
-    margin: 0;
-    vertical-align: middle;
-    font-size: 20px;
-    line-height: 22px;
-    color: #fff;
-    border-left: 1px solid #490202;
-    border-bottom: 1px solid #490202;
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 20px 25px;
+  margin: 0;
+  vertical-align: middle;
+  font-size: 20px;
+  line-height: 22px;
+  color: #fff;
+  border-left: 1px solid #490202;
+  border-bottom: 1px solid #490202;
 }
 
 .page-header__navbar-item:first-child a,
 .page-header__navbar-item:nth-child(2) a {
-    padding: 30px 25px;
+  padding: 30px 25px;
 }
 
 .page-header__navbar-item a:focus,
 .page-header__navbar-item a:hover {
-    /* background-color: #f9e4b7; */
-    background-color: #fff;
-    color: #490202;
-    opacity: 0.9;
-    outline: none;
+  background-color: #fff;
+  color: #490202;
+  opacity: 0.9;
+  outline: none;
 }
 
 .section {
-    padding-top: 30px;
-    padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 .section__title {
-    font-size: 30px;
-    line-height: 45px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: brown;
-    padding: 30px;
-    margin-top: 0;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: brown;
+  padding: 30px;
+  margin-top: 0;
 }
 
 .section__subtitle {
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: normal;
-    color: brown;
-    margin-top: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: normal;
+  color: brown;
+  margin-top: 0;
 }
 
 .section__text {
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    line-height: 28px;
-    margin-left: 28px;
-    margin-bottom: 50px;
-    text-align: justify;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  margin-left: 28px;
+  margin-bottom: 50px;
+  text-align: justify;
 }
 
-.memory__video,
+.section__video,
 .fiction__video {
-    text-align: center;
+  text-align: center;
 }
 
 .fiction__video {
-    margin-bottom: 70px;
+  margin-bottom: 70px;
 }
 
 .section--roads-of-war,
@@ -272,801 +270,829 @@ img {
 .section--monuments,
 .roads-of-war,
 .vitebsk {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 .page-main__wrapper--monuments {
-    background-image: url(../img/monuments-bg.png);
-    background-size: 1030px auto;
-    background-position: right 130px;
-    background-repeat: no-repeat;
+  background-image: url(../img/monuments-bg.png);
+  background-size: 1030px auto;
+  background-position: right 130px;
+  background-repeat: no-repeat;
 }
 
 .section--vitebsk {
-    width: 100%;
-    /* background-color: #f9e4b7; */
-    padding-top: 30px;
-    padding-bottom: 50px;
-    background-image: url(../img/bg.png);
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-size: cover;
+  background-position: center;
 }
 
 .books {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .books__item {
-    width: 25%;
-    padding: 15px 10px;
-    margin: 0px;
-    /* margin-bottom: 25px; */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
-    text-align: center;
-    outline: none;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    vertical-align: middle;
+  width: 25%;
+  padding: 15px 10px;
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  vertical-align: middle;
+  transition: transform 0.5s ease;
 }
 
 .books__item:focus,
 .books__item:hover {
-    -webkit-box-shadow: 0 0 15px 1px #908888;
-    box-shadow: 0 0 15px 1px #908888;
-    -webkit-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    transform: scale(1.03);
+  -webkit-box-shadow: 0 0 15px 1px #908888;
+  box-shadow: 0 0 15px 1px #908888;
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+  transition: transform 0.5s ease;
 }
 
 .book__title {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 0 10px;
-    height: 100px;
-    overflow: auto;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    text-align: justify;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  height: 100px;
+  overflow: auto;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: justify;
 }
 
 .book__cover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .section__more {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .button {
-    display: inline-block;
-    color: #fff;
-    font-size: 14px;
-    text-align: center;
-    vertical-align: middle;
-    padding: 7px 10px;
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 7px 10px;
 }
 
 .button--brown {
-    text-transform: uppercase;
-    background-color: brown;
-    border-radius: 3px;
+  text-transform: uppercase;
+  background-color: brown;
+  border-radius: 3px;
 }
 
 .button--brown:focus,
 .button--brown:hover {
-    background-color: #490202;
+  background-color: #490202;
 }
 
 .button--brown:active {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .button--details {
-    display: block;
-    margin: 0 auto;
-    width: 253px;
+  display: block;
+  margin: 0 auto;
+  width: 253px;
 }
 
 .section--poems-about-war {
-    padding: 30px 0;
+  padding: 30px 0;
 }
 
 .section__title--poems-about-war {
-    /* width: 960px; */
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 15px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 15px;
 }
 
 .section__subtitle--poems-about-war {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 
 /* слайдер цитаты и стихи */
 
 .slider {
-    position: relative;
-    padding-bottom: 100px;
-    text-align: center;
+  position: relative;
+  padding-bottom: 100px;
+  text-align: center;
 }
 
 .slider__buttons {
-    width: 100%;
-    position: absolute;
-    top: 40%;
+  width: 100%;
+  position: absolute;
+  top: 40%;
 }
 
 .slider__button {
-    position: absolute;
-    width: 22px;
-    height: 40px;
-    background-color: transparent;
-    cursor: pointer;
+  position: absolute;
+  width: 22px;
+  height: 40px;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .slider__button--prev {
-    top: 50%;
-    left: -15px;
+  top: 50%;
+  left: -15px;
 }
 
 .slider__button--next {
-    /* left: 1150px; */
-    left: 100%;
+  left: 100%;
 }
 
 .slider__button--prev::before,
 .slider__button--next::after {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    width: 22px;
-    height: 40px;
-    top: 0;
-    left: 0;
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 22px;
+  height: 40px;
+  top: 0;
+  left: 0;
 }
 
 .slider__button--prev::before {
-    background-image: url(../img/icon-left.svg);
+  background-image: url(../img/icon-left.svg);
 }
 
 .slider__button--next::after {
-    background-image: url(../img/icon-right.svg);
+  background-image: url(../img/icon-right.svg);
 }
 
 .slider__dots-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 150px;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 810px;
-    left: 50%;
-    margin-left: -75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 810px;
+  left: 50%;
+  margin-left: -75px;
 }
 
 .slider__dot {
-    width: 15px;
-    height: 15px;
-    padding: 3px;
-    margin-right: 10px;
-    background-color: #ffffff;
-    border: 2px solid brown;
-    border-radius: 50%;
-    cursor: pointer;
+  width: 15px;
+  height: 15px;
+  padding: 3px;
+  margin-right: 10px;
+  background-color: #ffffff;
+  border: 2px solid brown;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .slider__dot--active {
-    background-color: brown;
+  background-color: brown;
 }
 
 .page-footer {
-    border-top: 1px solid #490202;
+  border-top: 1px solid #490202;
 }
 
 .page-footer {
-    padding: 25px 0;
+  padding: 25px 0;
 }
 
 .page-footer__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .page-footer__logo {
-    width: 95px;
-    height: 95px;
+  width: 95px;
+  height: 95px;
 }
 
 .page-footer__logo-img {
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
 }
 
 .page-footer__logo-img:focus,
 .page-footer__logo-img:hover {
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 .page-footer__logo-img:active {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .page-footer__social {
-    margin-left: 75px;
+  margin-left: 75px;
 }
 
 .page-footer__social-link:not(:first-child) {
-    padding-left: 15px;
+  padding-left: 15px;
 }
 
 .page-footer__social-link:focus,
 .page-footer__social-link:hover {
-    outline: none;
+  outline: none;
 }
 
 .page-footer__social-link:focus path,
 .page-footer__social-link:hover path {
-    fill: #490202;
+  fill: #490202;
 }
 
 .page-footer__social-link:active path {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .page-footer__copyright {
-    width: 190px;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 700;
+  width: 190px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .up-button {
-    position: fixed;
-    z-index: 1;
-    padding: 0;
-    bottom: 75px;
-    right: 30px;
-    width: 64px;
-    height: 64px;
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: middle;
-    border: 5px solid;
-    border-radius: 50%;
-    display: none;
-    cursor: pointer;
-    color: brown;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-color: #a52a2a;
-    outline-color: #ffaaaa;
+  position: fixed;
+  z-index: 1;
+  padding: 0;
+  bottom: 75px;
+  right: 30px;
+  width: 64px;
+  height: 64px;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  border: 5px solid;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+  color: brown;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-color: #a52a2a;
+  outline-color: #ffaaaa;
 }
 
 .up-button:focus,
 .up-button:hover {
-    color: #490202;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-color: #490202;
-    outline: none;
+  color: #490202;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-color: #490202;
+  outline: none;
 }
 
 .up-button:active {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .shown {
-    display: inline-block;
+  display: inline-block;
 }
 
 
 /* Стили страницы ДОРОГАМИ ВОЙНЫ */
 
 .book-card {
-    width: 49%;
-    padding: 15px;
-    margin: 0;
-    margin-bottom: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: normal;
-    outline: none;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    vertical-align: middle;
-    /* cursor: pointer; */
-    text-align: justify;
+  width: 49%;
+  padding: 15px;
+  margin: 0;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: normal;
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  vertical-align: middle;
+  text-align: justify;
 }
 
 .book-card:focus,
 .book-card:hover {
-    -webkit-box-shadow: 0 0 15px 1px #908888;
-    box-shadow: 0 0 15px 1px #908888;
-    /* transform: scale(1.03); */
+  -webkit-box-shadow: 0 0 15px 1px #908888;
+  box-shadow: 0 0 15px 1px #908888;
 }
 
 .book-card__top-container {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    margin-bottom: 15px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-bottom: 15px;
 }
 
 .book-card__cover {
-    /* width: 210px;
-  height: 310px; */
-    margin-right: 15px;
-    cursor: pointer;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.book-card__cover img {
+  background-color: #a52a2a;
 }
 
 .book-card__wrapper {
-    width: 57%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-line-pack: baseline;
-    align-content: baseline;
+  width: 57%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-line-pack: baseline;
+  align-content: baseline;
 }
 
 .book-card__pressmark,
 .book-card__sigla-storage {
-    height: 55px;
-    padding: 7px;
+  height: 55px;
+  padding: 7px;
 }
 
 .book-card__pressmark {
-    margin-right: 15px;
-    padding: 10px;
-    background-color: #f0f0f0;
+  margin-right: 15px;
+  padding: 10px;
+  background-color: #f0f0f0;
 }
 
 .book-card__sigla-storage {
-    width: 65%;
+  width: 65%;
 }
 
 .book-card__description {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .book-card__annotation {
-    margin-bottom: 10px;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+  margin-bottom: 10px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 input {
-    display: none;
+  display: none;
 }
 
 .items {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 .book-card__annotation-full {
-    overflow: hidden;
-    width: 100%;
-    height: 105px;
+  display: inline-block;
+  overflow: hidden;
+  width: 100%;
+  height: 110px;
 }
 
 input[type="checkbox"]:checked~.book-card__annotation-full {
-    height: auto;
+  height: auto;
 }
 
 .book-card__annotation-more {
-    position: relative;
-    cursor: pointer;
-    color: brown;
-    font-weight: bold;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  color: brown;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .book-card__annotation-more::after {
-    content: "";
-    background-image: url(../img/arrow-down.svg);
-    background-size: 17px auto;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 170px;
-    top: 5px;
-    width: 17px;
-    height: 11px;
+  content: "";
+  background-image: url(../img/arrow-down.svg);
+  background-size: 17px auto;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 170px;
+  top: 5px;
+  width: 17px;
+  height: 11px;
 }
 
 input[type="checkbox"]:checked~.book-card__annotation-more::after {
-    background-image: url(../img/arrow-up.svg);
-    top: 3px;
+  background-image: url(../img/arrow-up.svg);
+  top: 3px;
 }
 
 .section__list-title {
-    font-size: 28px;
-    line-height: 34px;
-    color: #490202;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 35px;
+  font-size: 28px;
+  line-height: 34px;
+  color: #490202;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 35px;
 }
 
 .list-counter {
-    position: relative;
-    list-style: none;
-    counter-reset: number;
-    font-size: 18px;
-    line-height: 24px;
-    font-family: Arial, sans-serif;
+  position: relative;
+  list-style: none;
+  counter-reset: number;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Arial, sans-serif;
 }
 
 .list-counter__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .list-counter__item::before {
-    counter-increment: number;
-    content: counter(number) ".";
-    position: absolute;
-    left: 0px;
-    z-index: 3;
-    text-align: center;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
-    color: #490202;
+  counter-increment: number;
+  content: counter(number) ".";
+  position: absolute;
+  left: 0px;
+  z-index: 3;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #490202;
 }
 
 .list-counter__pressmark {
-    display: inline-block;
-    width: 5%;
-    font-weight: 700;
-    color: #a52a2a;
-    margin-right: 45px;
+  display: inline-block;
+  width: 5%;
+  font-weight: 700;
+  color: #a52a2a;
+  margin-right: 45px;
 }
 
 .list-counter__content {
-    width: 75%;
-    margin-right: 25px;
-    text-align: justify;
+  width: 75%;
+  margin-right: 25px;
+  text-align: justify;
 }
 
 .list-counter__sigla {
-    width: 10%;
-    text-align: center;
+  width: 10%;
+  text-align: center;
 }
 
 .section__blockquote {
-    font-family: Arial, sans-serif;
-    margin-bottom: 100px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 100px;
 }
 
 .section__lyrics {
-    font-size: 18px;
-    line-height: 36px;
-    font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 700;
 }
 
 .section__lyrics--index-memory {
-    text-align: center;
+  text-align: center;
 }
 
 .section__blockquote-author {
-    font-size: 16px;
-    padding-left: 70px;
+  font-size: 16px;
+  padding-left: 70px;
 }
 
 .section__blockquote-author--index-memory {
-    padding-left: 70%;
+  padding-left: 70%;
 }
 
 .section__lyrics--index-monuments {
-    text-align: left;
+  text-align: left;
 }
 
 .section__blockquote-author--index-monuments {
-    padding-left: 0px;
+  padding-left: 0px;
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button--close {
+  position: fixed;
+  background-color: transparent;
+  right: 5%;
+  top: 5%;
+  width: 30px;
+  height: 30px;
+  display: block;
+  border: 1px solid transparent;
+  background-image: url("../img/close-button.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 100;
 }
 
 @media (max-width: 1024px) {
-    .page-header {
-        background-size: 100%;
-    }
-    .page-header__text {
-        margin-top: 280px;
-    }
-    .page-header__title {
-        font-size: 35px;
-        margin-left: 95px;
-    }
-    .page-header__title::before {
-        top: -25px;
-        left: -102px;
-        background-size: 115px 110px;
-    }
-    .page-header__navbar-item a {
-        font-size: 18px;
-        line-height: 20px;
-        padding: 15px 10px;
-    }
-    .page-header__navbar-item:first-child a,
-    .page-header__navbar-item:nth-child(2) a {
-        padding: 25px 10px;
-    }
-    .page-header__text {
-        font-size: 25px;
-        line-height: 30px;
-    }
-    .page-header__logo {
-        margin: 5px 0;
-        margin-right: 20px;
-    }
-    .books__item {
-        width: 50%;
-    }
-    .section__subtitle--poems-about-war {
-        width: 70%;
-        margin: 0 auto;
-    }
-    .slider {
-        margin-top: 30px;
-    }
-    .slider__button--prev {
-        left: 0px;
-    }
-    .slider__button--next {
-        left: 97%;
-    }
-    .slider__dots-wrapper {
-        top: 670px;
-    }
-    .page-header__text--inner {
-        margin-top: 110px;
-    }
-    .section__title {
-        padding: 10px 30px;
-    }
-    .book-card {
-        font-size: 16px;
-        line-height: 20px;
-    }
-    .section__list-title {
-        font-size: 26px;
-        line-height: 30px;
-        margin-top: 35px;
-        margin-bottom: 25px;
-    }
-    .list-counter {
-        font-size: 16px;
-        line-height: 20px;
-    }
-    .list-counter__item::before {
-        left: 5px;
-        font-size: 18px;
-    }
-    .page-main__wrapper--monuments {
-        background-size: 835px auto;
-        background-position: 50px 205px;
-    }
-    .page-main__wrapper--monuments {
-        background-size: 835px auto;
-        background-position: right 205px;
-    }
+  .page-header {
+    background-size: 100%;
+  }
+  .page-header__text {
+    margin-top: 280px;
+  }
+  .page-header__title {
+    font-size: 35px;
+    margin-left: 95px;
+  }
+  .page-header__title::before {
+    top: -25px;
+    left: -102px;
+    background-size: 115px 110px;
+  }
+  .page-header__navbar-item a {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 15px 10px;
+  }
+  .page-header__navbar-item:first-child a,
+  .page-header__navbar-item:nth-child(2) a {
+    padding: 25px 10px;
+  }
+  .page-header__text {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .page-header__logo {
+    margin: 5px 0;
+    margin-right: 20px;
+  }
+  .books__item {
+    width: 50%;
+  }
+  .section__subtitle--poems-about-war {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .slider {
+    margin-top: 30px;
+  }
+  .slider__button--prev {
+    left: 0px;
+  }
+  .slider__button--next {
+    left: 97%;
+  }
+  .slider__dots-wrapper {
+    top: 670px;
+  }
+  .page-header__text--inner {
+    margin-top: 110px;
+  }
+  .section__title {
+    padding: 10px 30px;
+  }
+  .book-card {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .section__list-title {
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+  }
+  .list-counter {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .list-counter__item::before {
+    left: 5px;
+    font-size: 18px;
+  }
+  .page-main__wrapper--monuments {
+    background-size: 835px auto;
+    background-position: 50px 205px;
+  }
+  .page-main__wrapper--monuments {
+    background-size: 835px auto;
+    background-position: right 205px;
+  }
 }
 
 @media (max-width: 767px) {
-    .page-header {
-        background-image: url(../img/header-index-mobile.jpg);
-        background-size: cover;
-        background-position: left;
-    }
-    .page-header__logo {
-        width: 70px;
-        margin-right: 7px;
-    }
-    .page-header__text {
-        margin-top: 100px;
-    }
-    .page-header__title {
-        font-size: 27px;
-        margin-left: 10px;
-    }
-    .page-header__title::before {
-        display: none;
-    }
-    .page-header__text {
-        font-size: 15px;
-        line-height: 30px;
-        margin-top: 150px;
-        padding-left: 20px;
-    }
-    .page-header__navbar-item a {
-        font-size: 14px;
-        line-height: 16px;
-        padding: 10px 10px;
-    }
-    .section__title {
-        font-size: 25px;
-        line-height: 35px;
-        margin-bottom: 0;
-    }
-    .section__text {
-        font-size: 14px;
-        line-height: 20px;
-        margin: 30px 10px;
-    }
-    .books__item {
-        width: 100%;
-    }
-    .books__item {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        font-size: 15px;
-        line-height: 18px;
-    }
-    .book__cover {
-        width: 50%;
-    }
-    .book__title {
-        width: 50%;
-        height: auto;
-        margin-top: 0;
-        padding: 0 10px;
-    }
-    .book__sigla-storage {
-        margin: 0 auto;
-        margin-top: 10px;
-    }
-    .slider {
-        padding-bottom: 50px;
-    }
-    .slider__buttons {
-        top: 33%;
-    }
-    .slider__dots-wrapper {
-        top: 97%;
-    }
-    .section__blockquote {
-        margin: 0 15px;
-        margin-bottom: 25px;
-    }
-    .section__lyrics,
-    .section__blockquote-author--index-monuments {
-        font-size: 14px;
-        line-height: 24px;
-    }
-    .page-footer__container {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-    .page-footer__social {
-        margin-left: 0;
-    }
-    .page-footer__copyright {
-        text-align: center;
-    }
-    .page-header--inner {
-        background-image: url(../img/collag-header-inner.jpg);
-        background-size: cover;
-        background-position: left;
-    }
-    .book-card {
-        width: 100%;
-    }
-    .book-card__wrapper {
-        width: 65%;
-    }
-    .section__list-title {
-        font-size: 22px;
-    }
-    .list-counter {
-        font-size: 14px;
-        line-height: 18px;
-        padding-left: 30px;
-    }
-    .list-counter__item::before {
-        font-size: 14px;
-    }
-    .list-counter__pressmark {
-        width: 15%;
-        margin-right: 35px;
-    }
-    .list-counter__content {
-        margin-right: 10px;
-    }
-    .list-counter__sigla {
-        width: 15%;
-    }
-    .section__blockquote--monuments {
-        margin-bottom: 70px;
-    }
-    .section__blockquote-author {
-        padding-left: 0;
-    }
-    .page-main__wrapper--monuments {
-        background-size: 90% auto;
-    }
-    .up-button {
-        bottom: 30px;
-        right: 23px;
-        width: 55px;
-        height: 55px;
-        font-size: 28px;
-        border: 4px solid;
-    }
+  .page-header {
+    background-size: cover;
+    background-position: center 58px;
+  }
+  .page-header__logo {
+    width: 70px;
+    margin-right: 7px;
+  }
+  .page-header__text {
+    margin-top: 100px;
+  }
+  .page-header__title {
+    font-size: 27px;
+    margin-left: 10px;
+  }
+  .page-header__title::before {
+    display: none;
+  }
+  .page-header__text {
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 150px;
+    padding-left: 20px;
+  }
+  .page-header__navbar-item a {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 10px;
+  }
+  .section__title {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 0;
+  }
+  .section__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 30px 10px;
+  }
+  .books__item {
+    width: 100%;
+  }
+  .books__item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .book__cover {
+    width: 50%;
+  }
+  .book__title {
+    width: 50%;
+    height: auto;
+    margin-top: 0;
+    padding: 0 10px;
+  }
+  .book__sigla-storage {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .slider {
+    padding-bottom: 50px;
+  }
+  .slider__buttons {
+    top: 33%;
+  }
+  .slider__dots-wrapper {
+    top: 97%;
+  }
+  .section__blockquote {
+    margin: 0 15px;
+    margin-bottom: 25px;
+  }
+  .section__lyrics,
+  .section__blockquote-author--index-monuments {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .page-footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .page-footer__social {
+    margin-left: 0;
+  }
+  .page-footer__copyright {
+    text-align: center;
+  }
+  .page-header--inner {
+    background-image: url(../img/collag-header-inner.jpg);
+    background-size: cover;
+    background-position: left;
+  }
+  .book-card {
+    width: 100%;
+  }
+  .book-card__wrapper {
+    width: 65%;
+  }
+  .section__list-title {
+    font-size: 22px;
+  }
+  .list-counter {
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 30px;
+  }
+  .list-counter__item::before {
+    font-size: 14px;
+  }
+  .list-counter__pressmark {
+    width: 15%;
+    margin-right: 35px;
+  }
+  .list-counter__content {
+    margin-right: 10px;
+  }
+  .list-counter__sigla {
+    width: 15%;
+  }
+  .section__blockquote--monuments {
+    margin-bottom: 70px;
+  }
+  .section__blockquote-author {
+    padding-left: 0;
+  }
+  .page-main__wrapper--monuments {
+    background-size: 90% auto;
+  }
+  .up-button {
+    bottom: 30px;
+    right: 23px;
+    width: 55px;
+    height: 55px;
+    font-size: 28px;
+    border: 4px solid;
+  }
 }
