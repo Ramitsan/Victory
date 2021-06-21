@@ -709,7 +709,7 @@ input {
   display: inline-block;
   overflow: hidden;
   width: 100%;
-  height: 110px;
+  height: 106px;
 }
 
 input[type="checkbox"]:checked~.book-card__annotation-full {
