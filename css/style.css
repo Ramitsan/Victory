@@ -261,7 +261,8 @@ img {
   text-align: center;
 }
 
-.fiction__video {
+.fiction__video,
+.section__video--fiction {
   margin-bottom: 70px;
 }
 
